@@ -18,3 +18,17 @@
   font-size: 1.25rem;
   margin-bottom: 2rem;
 }
+
+section {
+  padding: 60px 0;
+}
+
+section h2 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.skills-list li {
+  margin-bottom: 0.5rem;
+}
