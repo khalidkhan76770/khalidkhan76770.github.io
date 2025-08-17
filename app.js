@@ -48,7 +48,6 @@ function NavBar() {
 function App() {
   return (
     <div>
-      <section className="hero">
       <NavBar />
 
       <section className="hero" id="home">
@@ -62,8 +61,7 @@ function App() {
         </div>
       </section>
 
-      <section className="py-5">
-      <section id="experience">
+      <section id="experience" className="py-5">
         <div className="container">
           <h2 className="text-center mb-4">Features</h2>
           <div className="row">
@@ -79,6 +77,7 @@ function App() {
               <h3>Feature Three</h3>
               <p>Mix custom CSS to give your page a unique identity.</p>
             </div>
+          </div>
           <h2>Work Experience</h2>
           <div className="mb-4">
             <h5>Inventory Controller, SAFCO</h5>
