@@ -1,170 +1,34 @@
- <!DOCTYPE html>
- <html lang="en">
-   <head>
-     <meta charset="UTF-8" />
--    <title>Portfolio</title>
-+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-+    <title>My Portfolio</title>
-+    <style>
-+      body {
-+        font-family: Arial, sans-serif;
-+        line-height: 1.6;
-+        margin: 0;
-+        padding: 0;
-+        color: #333;
-+      }
-+      header, section {
-+        padding: 40px 20px;
-+        max-width: 1000px;
-+        margin: auto;
-+      }
-+      nav {
-+        display: flex;
-+        justify-content: space-between;
-+        align-items: center;
-+        padding: 20px;
-+        background: #f4f4f4;
-+      }
-+      nav ul {
-+        list-style: none;
-+        display: flex;
-+        gap: 15px;
-+        padding: 0;
-+        margin: 0;
-+      }
-+      nav a {
-+        text-decoration: none;
-+        color: #333;
-+      }
-+      .hero {
-+        text-align: center;
-+        padding: 80px 20px;
-+        background: #e0f7fa;
-+      }
-+      .hero img {
-+        width: 150px;
-+        height: 150px;
-+        border-radius: 50%;
-+        object-fit: cover;
-+      }
-+      .skills ul,
-+      .projects ul,
-+      .experience ul,
-+      .education ul,
-+      .testimonials ul {
-+        list-style: none;
-+        padding: 0;
-+      }
-+      footer {
-+        text-align: center;
-+        background: #f4f4f4;
-+        padding: 20px;
-+      }
-+      .social-links a {
-+        margin-right: 10px;
-+      }
-+    </style>
-   </head>
-   <body>
--    <h1>Hello World</h1>
--    <p>Welcome to my portfolio.</p>
-+    <nav>
-+      <h2>My Portfolio</h2>
-+      <ul>
-+        <li><a href="#about">About</a></li>
-+        <li><a href="#skills">Skills</a></li>
-+        <li><a href="#projects">Projects</a></li>
-+        <li><a href="#experience">Experience</a></li>
-+        <li><a href="#testimonials">Testimonials</a></li>
-+        <li><a href="#contact">Contact</a></li>
-+      </ul>
-+    </nav>
-+
-+    <header class="hero">
-+      <img src="https://via.placeholder.com/150" alt="Profile photo" />
-+      <h1>Your Name</h1>
-+      <p>Frontend Developer & Designer</p>
-+      <a href="#projects">View Portfolio</a>
-+      <a href="#contact">Contact Me</a>
-+    </header>
-+
-+    <section id="about">
-+      <h2>About Me</h2>
-+      <p>
-+        Brief bio describing your background, mission, and what you bring to the table.
-+      </p>
-+      <p><a href="resume.pdf" download>Download Resume</a></p>
-+    </section>
-+
-+    <section id="skills" class="skills">
-+      <h2>Skills</h2>
-+      <ul>
-+        <li>HTML / CSS / JavaScript</li>
-+        <li>React / Vue / Angular</li>
-+        <li>Node.js / Express</li>
-+        <li>Design Tools: Figma, Photoshop</li>
-+      </ul>
-+    </section>
-+
-+    <section id="projects" class="projects">
-+      <h2>Projects</h2>
-+      <ul>
-+        <li>
-+          <h3>Project One</h3>
-+          <p>Short description of project one. <a href="#">Live Demo</a> | <a href="#">Source</a></p>
-+        </li>
-+        <li>
-+          <h3>Project Two</h3>
-+          <p>Short description of project two. <a href="#">Live Demo</a> | <a href="#">Source</a></p>
-+        </li>
-+      </ul>
-+    </section>
-+
-+    <section id="experience" class="experience">
-+      <h2>Experience</h2>
-+      <ul>
-+        <li>
-+          <h3>Job Title - Company</h3>
-+          <p>Year - Present</p>
-+          <p>Key responsibilities and accomplishments.</p>
-+        </li>
-+      </ul>
-+      <h2>Education</h2>
-+      <ul class="education">
-+        <li>
-+          <h3>Degree - Institution</h3>
-+          <p>Year of Graduation</p>
-+        </li>
-+      </ul>
-+    </section>
-+
-+    <section id="testimonials" class="testimonials">
-+      <h2>Testimonials</h2>
-+      <ul>
-+        <li>
-+          <blockquote>
-+            "This is a great testimonial from a colleague or client." – Jane Doe
-+          </blockquote>
-+        </li>
-+      </ul>
-+    </section>
-+
-+    <section id="contact">
-+      <h2>Contact</h2>
-+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-+      <div class="social-links">
-+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-+        <a href="https://github.com" target="_blank">GitHub</a>
-+        <a href="https://twitter.com" target="_blank">Twitter</a>
-+      </div>
-+    </section>
-+
-+    <footer>
-+      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
-+    </footer>
-+
-+    <script>
-+      document.getElementById('year').textContent = new Date().getFullYear();
-+    </script>
-   </body>
- </html>
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React & ReactDOM -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Babel compiler (for JSX) -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Your React code -->
+  <script type="text/babel" src="app.js"></script>
+</body>
+</html>
