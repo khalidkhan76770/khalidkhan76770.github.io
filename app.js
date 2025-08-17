@@ -52,9 +52,6 @@ function App() {
 
       <section className="hero" id="home">
         <div className="container">
-          <h1>Welcome to My Landing Page</h1>
-          <p>Build modern interfaces with Bootstrap & React.</p>
-          <button className="btn btn-primary btn-lg">Get Started</button>
           <h1>MD KHALID KHAN</h1>
           <p>Front-End Developer & Inventory Controller</p>
           <a href="#contact" className="btn btn-primary btn-lg">Contact Me</a>
@@ -63,21 +60,6 @@ function App() {
 
       <section id="experience" className="py-5">
         <div className="container">
-          <h2 className="text-center mb-4">Features</h2>
-          <div className="row">
-            <div className="col-md-4">
-              <h3>Feature One</h3>
-              <p>Quickly scaffold stylish UI with Bootstrap classes.</p>
-            </div>
-            <div className="col-md-4">
-              <h3>Feature Two</h3>
-              <p>Use React components for dynamic content.</p>
-            </div>
-            <div className="col-md-4">
-              <h3>Feature Three</h3>
-              <p>Mix custom CSS to give your page a unique identity.</p>
-            </div>
-          </div>
           <h2>Work Experience</h2>
           <div className="mb-4">
             <h5>Inventory Controller, SAFCO</h5>
