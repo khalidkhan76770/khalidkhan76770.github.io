@@ -31,10 +31,10 @@ function NavBar() {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#skills">Skills</a>
+                  <a className="dropdown-item" href="#certificates">Certificates</a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#certificates">Certificates</a>
+                  <a className="dropdown-item" href="#skills">Skills</a>
                 </li>
               </ul>
             </li>
